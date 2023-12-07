@@ -1,6 +1,7 @@
 package io.arrogantprogrammer.domain;
 
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,19 @@ public class Hero {
     private Boolean darkSide;
     private LightSaber lightSaber;
     private List<Integer> episodeIds = new ArrayList<>();
+
+    public Hero(String name, String surname, Double height, Integer mass, Boolean darkSide, LightSaber lightSaber, List<Integer> episodeIds) {
+        this.name = name;
+        this.surname = surname;
+        this.height = height;
+        this.mass = mass;
+        this.darkSide = darkSide;
+        this.lightSaber = lightSaber;
+        this.episodeIds = episodeIds;
+    }
+
+    public Hero() {
+    }
 
     public String getName() {
         return name;

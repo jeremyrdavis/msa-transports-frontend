@@ -1,5 +1,6 @@
 package io.arrogantprogrammer.domain;
 
-enum LightSaber {
+public enum LightSaber {
     RED, BLUE, GREEN, PURPLE
+
 }
